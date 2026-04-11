@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- ==================== Page d'accueil ==================== -->
+  <url>
+    <loc>https://ivaanyh.com/</loc>
+    <lastmod>2024-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ivaanyh.com/"/>
+    <image:image>
+      <image:loc>https://ivaanyh.com/assets/images/hero-bg.jpg</image:loc>
+      <image:title>Ivaanyh — Auteure-Compositrice-Interprète</image:title>
+      <image:caption>Photo principale d'Ivaanyh, artiste indépendante</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ivaanyh.com/assets/images/ivaanyh-og.jpg</image:loc>
+      <image:title>Ivaanyh — Photo officielle</image:title>
+    </image:image>
+  </url>
+
+  <!-- ==================== L'artiste / Biographie ==================== -->
+  <url>
+    <loc>https://ivaanyh.com/about.html</loc>
+    <lastmod>2024-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ivaanyh.com/assets/images/ivaanyh-portrait.jpg</image:loc>
+      <image:title>Portrait officiel d'Ivaanyh</image:title>
+      <image:caption>Ivaanyh, auteure-compositrice-interprète indépendante</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ==================== Galerie photos ==================== -->
+  <url>
+    <loc>https://ivaanyh.com/photos.html</loc>
+    <lastmod>2024-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ivaanyh.com/assets/images/photos/portrait-01.jpg</image:loc>
+      <image:title>Ivaanyh — Portrait officiel 2024</image:title>
+      <image:caption>Portrait officiel d'Ivaanyh, auteure-compositrice-interprète</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ivaanyh.com/assets/images/photos/live-01.jpg</image:loc>
+      <image:title>Ivaanyh en concert</image:title>
+      <image:caption>Ivaanyh lors d'une performance live</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ivaanyh.com/assets/images/photos/studio-01.jpg</image:loc>
+      <image:title>Ivaanyh en session d'enregistrement</image:title>
+      <image:caption>Ivaanyh au studio d'enregistrement</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ==================== Vidéos ==================== -->
+  <url>
+    <loc>https://ivaanyh.com/videos.html</loc>
+    <lastmod>2024-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://ivaanyh.com/assets/images/videos/thumb-01.jpg</video:thumbnail_loc>
+      <video:title>Ivaanyh — Titre (Clip officiel)</video:title>
+      <video:description>Clip officiel du premier single d'Ivaanyh, auteure-compositrice-interprète indépendante.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/XXXXXXXXXX</video:player_loc>
+      <video:publication_date>2024-01-01</video:publication_date>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:uploader info="https://ivaanyh.com/about.html">Ivaanyh</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://ivaanyh.com/assets/images/videos/thumb-02.jpg</video:thumbnail_loc>
+      <video:title>Ivaanyh — Session acoustique</video:title>
+      <video:description>Session acoustique intimiste d'Ivaanyh filmée en studio.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/YYYYYYYYYY</video:player_loc>
+      <video:publication_date>2024-06-01</video:publication_date>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:uploader info="https://ivaanyh.com/about.html">Ivaanyh</video:uploader>
+    </video:video>
+  </url>
+
+  <!-- ==================== Blog — Index ==================== -->
+  <url>
+    <loc>https://ivaanyh.com/blog/</loc>
+    <lastmod>2024-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ==================== Blog — Articles ==================== -->
+  <url>
+    <loc>https://ivaanyh.com/blog/posts/qui-est-ivaanyh.html</loc>
+    <lastmod>2024-03-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ivaanyh.com/assets/images/ivaanyh-portrait.jpg</image:loc>
+      <image:title>Qui est Ivaanyh ? Portrait d'une artiste indépendante</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://ivaanyh.com/blog/posts/influences-musicales.html</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ivaanyh.com/blog/posts/processus-creation.html</loc>
+    <lastmod>2024-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

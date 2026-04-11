@@ -1,0 +1,22 @@
+{
+  "name": "Ivaanyh — Site Officiel",
+  "short_name": "Ivaanyh",
+  "description": "Site officiel d'Ivaanyh, auteure-compositrice-interprète indépendante.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0A0A0F",
+  "theme_color": "#C9748F",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "/assets/images/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ]
+}

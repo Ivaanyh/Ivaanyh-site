@@ -1,0 +1,233 @@
+/* ============================================================
+   IVAANYH — Design System v2
+   Thème clair / éditorial blanc
+   main.css — Tokens, reset, typographie, utilitaires
+   ============================================================ */
+
+/* ---- Custom Properties ---- */
+:root {
+  /* Couleurs — Éditorial blanc */
+  --bg:              #FFFFFF;
+  --surface:         #F7F6F3;   /* Blanc chaud légèrement crémeux */
+  --surface-2:       #EEECE8;   /* Gris très clair */
+  --border:          #E0DDD8;   /* Bordure légère */
+  --border-light:    #ECEAE6;   /* Bordure encore plus fine */
+
+  --accent:          #1A1A1A;   /* Noir comme accent principal */
+  --accent-dim:      #555550;   /* Gris foncé pour états désactivés */
+
+  --text:            #111110;   /* Quasi-noir */
+  --text-2:          #6B6860;   /* Gris moyen */
+  --text-3:          #B0ADA7;   /* Gris clair */
+
+  /* Typographie */
+  --serif:   'Cormorant Garamond', 'Palatino Linotype', Georgia, serif;
+  --sans:    'DM Sans', 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Tailles fluides */
+  --display: clamp(5rem, 14vw, 11rem);   /* Nom héro */
+  --h1:      clamp(2.4rem, 5vw, 4.5rem);
+  --h2:      clamp(1.8rem, 3vw, 2.8rem);
+  --h3:      clamp(1.1rem, 1.8vw, 1.4rem);
+  --body:    clamp(0.9rem, 1.2vw, 1rem);
+  --small:   0.8125rem;
+  --xs:      0.6875rem;
+
+  /* Espacements */
+  --s:   1rem;
+  --m:   2rem;
+  --l:   4rem;
+  --xl:  7rem;
+  --2xl: 11rem;
+
+  /* Durées */
+  --fast:   180ms;
+  --mid:    350ms;
+  --slow:   600ms;
+  --ease:   cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* ---- Reset ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: var(--body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img, video, svg { display: block; max-width: 100%; }
+
+ul, ol { list-style: none; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--fast);
+}
+
+/* ---- Skip nav ---- */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: var(--accent);
+  color: var(--bg);
+  padding: .6rem 1.4rem;
+  font-size: var(--small);
+  font-weight: 600;
+  border-radius: 2px;
+  z-index: 9999;
+  transition: top var(--fast);
+}
+.skip-link:focus { top: 1rem; }
+
+/* ---- Headings ---- */
+h1, h2, h3, h4 {
+  font-family: var(--serif);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -.01em;
+  color: var(--text);
+}
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+
+/* ---- Étiquette de section ---- */
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-family: var(--sans);
+  font-size: var(--xs);
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+.label::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 1px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ---- Numéro de section (éditorial) ---- */
+.section-num {
+  font-family: var(--sans);
+  font-size: var(--xs);
+  font-weight: 400;
+  letter-spacing: .15em;
+  color: var(--text-3);
+}
+
+/* ---- Boutons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-family: var(--sans);
+  font-size: var(--xs);
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all var(--mid) var(--ease);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--bg);
+  padding: .85rem 2.2rem;
+}
+.btn-primary:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-2);
+  padding: .85rem 0;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: .15em;
+}
+.btn-ghost::after { content: ' →'; }
+.btn-ghost:hover { color: var(--text); border-color: var(--text-2); }
+
+/* Bouton héro — outline blanc, sur fond photo */
+.btn-hero {
+  background: transparent;
+  color: #fff;
+  padding: .85rem 2.2rem;
+  border: 1px solid rgba(255,255,255,.55);
+  backdrop-filter: blur(4px);
+  letter-spacing: .18em;
+}
+.btn-hero:hover {
+  background: #fff;
+  color: var(--text);
+  border-color: #fff;
+}
+
+.btn-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all var(--fast);
+}
+.btn-circle:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Focus */
+:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* ---- Ligne horizontale ---- */
+.rule { border: none; border-top: 1px solid var(--border); }
+
+/* ---- Accent texte ---- */
+em { font-style: italic; color: var(--accent); }
+
+/* ---- Prose (articles) ---- */
+.prose > * + * { margin-top: 1.2em; }
+.prose h2 { font-size: var(--h3); margin-top: 2.5em; color: var(--text); }
+.prose h2::before { content: '— '; color: var(--accent); }
+.prose p, .prose li { color: var(--text-2); line-height: 1.8; }
+.prose ul { list-style: none; padding-left: 1em; }
+.prose ul li::before { content: '–'; margin-right: .5em; color: var(--accent); }
+.prose strong { color: var(--text); font-weight: 600; }
+.prose a { color: var(--accent); text-underline-offset: 3px; text-decoration: underline; text-decoration-color: transparent; transition: text-decoration-color var(--fast); }
+.prose a:hover { text-decoration-color: var(--accent); }
+.prose blockquote { border-left: 1px solid var(--accent); padding-left: 1.5em; font-family: var(--serif); font-size: 1.3rem; font-style: italic; color: var(--text-2); }
+
+/* ---- Utilitaires ---- */
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+.text-accent { color: var(--accent); }
+.text-muted  { color: var(--text-2); }
+.text-dim    { color: var(--text-3); }
+.mono { font-family: var(--sans); font-variant-numeric: tabular-nums; }

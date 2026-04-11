@@ -1,0 +1,87 @@
+# ==============================================================
+# robots.txt — Ivaanyh Official Website
+# https://ivaanyh.com
+# ==============================================================
+
+# ---- Default: allow all web crawlers ----
+User-agent: *
+Allow: /
+Disallow: /assets/css/
+Disallow: /assets/js/
+
+# Sitemap location
+Sitemap: https://ivaanyh.com/sitemap.xml
+
+# ---- Google bots ----
+User-agent: Googlebot
+Allow: /
+Allow: /assets/images/
+
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+User-agent: Googlebot-Video
+Allow: /
+
+# Google AI (Search Generative Experience / Gemini)
+User-agent: Google-Extended
+Allow: /
+
+# ---- Bing ----
+User-agent: Bingbot
+Allow: /
+
+# ---- AI assistants & LLM crawlers ----
+# Allow these bots to index content for AI-powered search and answers.
+# This is a deliberate GEO strategy: letting AI systems read the site
+# enables Ivaanyh's official content to be cited in AI responses.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ---- Social media / messaging previews ----
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# ---- Disallow non-useful crawlers ----
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /

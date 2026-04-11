@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ivaanyh — Galerie Photos Officielle | Portraits, Live & Scène</title>
+  <meta name="description" content="Galerie photos officielle d'Ivaanyh, auteure-compositrice-interprète. Portraits artistiques, photos de concerts, festivals et coulisses.">
+  <meta name="keywords" content="Ivaanyh photos, galerie photos Ivaanyh, portraits artiste, photos concert, Nuits de Sologne, Printemps de Bourges">
+  <meta name="author" content="Ivaanyh">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://ivaanyh.com/photos.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ivaanyh Officiel">
+  <meta property="og:title" content="Ivaanyh — Galerie Photos Officielle">
+  <meta property="og:description" content="Galerie photos officielle d'Ivaanyh — portraits, concerts et scène.">
+  <meta property="og:url" content="https://ivaanyh.com/photos.html">
+  <meta property="og:image" content="https://ivaanyh.com/assets/images/hero-bg.JPEG">
+  <meta property="og:locale" content="fr_FR">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ivaanyh">
+  <meta name="twitter:title" content="Ivaanyh — Galerie Photos Officielle">
+  <meta name="twitter:image" content="https://ivaanyh.com/assets/images/hero-bg.JPEG">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo en plein écran" tabindex="-1">
+    <button class="lightbox-close" id="lb-close" aria-label="Fermer">&times;</button>
+    <img class="lightbox-img" id="lb-img" src="" alt="">
+  </div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="nav nav--solid" id="nav" aria-label="Navigation principale">
+    <a href="index.html" class="nav-logo" aria-label="Ivaanyh — Accueil">
+      <img class="nav-logo-img" src="assets/images/logo.png" alt="Ivaanyh" width="156" height="30"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <span class="nav-logo-text" style="display:none">Ivaanyh</span>
+    </a>
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+    <ul class="nav-links" id="nav-menu" role="list">
+      <li><a href="about.html" class="nav-link">L'artiste</a></li>
+      <li><a href="photos.html" class="nav-link" aria-current="page">Photos</a></li>
+      <li><a href="videos.html" class="nav-link">Vidéos</a></li>
+      <li><a href="blog/" class="nav-link">Blog</a></li>
+      <li><a href="about.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- En-tête hero -->
+    <div style="position:relative;height:90vh;min-height:600px;display:flex;align-items:flex-end;overflow:hidden;">
+      <img src="assets/images/Bandeau Couv Photo site.JPEG" alt="" aria-hidden="true"
+           style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;">
+      <div class="wrap" style="position:relative;z-index:1;padding-bottom:2.5rem;">
+        <nav aria-label="Fil d'Ariane" class="breadcrumb" style="color:rgba(255,255,255,.7);">
+          <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="index.html" itemprop="item" style="color:rgba(255,255,255,.7);"><span itemprop="name">Accueil</span></a>
+              <meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <span itemprop="name" aria-current="page" style="color:#fff;">Photos</span>
+              <meta itemprop="position" content="2">
+            </li>
+          </ol>
+        </nav>
+        <span class="label" style="margin-top:1.5rem;display:inline-flex;color:#fff;border-color:rgba(255,255,255,.4);">Galerie</span>
+        <h1 style="margin-top:1rem;font-size:clamp(2.5rem,6vw,5rem);color:#fff;">Photos</h1>
+        <p style="color:rgba(255,255,255,.85);">Portraits, scène et coulisses — l'univers visuel d'Ivaanyh.</p>
+      </div>
+    </div>
+
+    <!-- ==================== GALERIE ==================== -->
+    <section class="section" aria-label="Galerie photos d'Ivaanyh">
+      <div class="wrap">
+        <div class="gallery-grid">
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/photo jeans retouché.JPEG"
+               data-alt="Ivaanyh — Portrait"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/photo jeans retouché.JPEG" alt="Ivaanyh — Portrait" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Portrait</span></div>
+            <span class="g-num">01</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/PLP8677 C.JPG"
+               data-alt="Ivaanyh — Portrait artistique"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/PLP8677 C.JPG" alt="Ivaanyh — Portrait artistique" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Portrait</span></div>
+            <span class="g-num">02</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/IVC08934.jpg"
+               data-alt="Ivaanyh — Scène"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/IVC08934.jpg" alt="Ivaanyh — Scène" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Scène</span></div>
+            <span class="g-num">03</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/Nuits de sologne - Concert Ivaanyh - 93-.jpg"
+               data-alt="Ivaanyh — Nuits de Sologne"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/Nuits de sologne - Concert Ivaanyh - 93-.jpg" alt="Ivaanyh — Nuits de Sologne" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Nuits de Sologne</span></div>
+            <span class="g-num">04</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/Photo guitare Nuits de sologne.JPEG"
+               data-alt="Ivaanyh — Guitare, Nuits de Sologne"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/Photo guitare Nuits de sologne.JPEG" alt="Ivaanyh — Guitare, Nuits de Sologne" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Nuits de Sologne</span></div>
+            <span class="g-num">05</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/Full Band Ivaanyh.jpg"
+               data-alt="Ivaanyh — Full Band"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/Full Band Ivaanyh.jpg" alt="Ivaanyh — Full Band" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Full Band</span></div>
+            <span class="g-num">06</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/Visuel Stage.jpg"
+               data-alt="Ivaanyh — Scène"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/Visuel Stage.jpg" alt="Ivaanyh — Scène" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Scène</span></div>
+            <span class="g-num">07</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/La marseillaise boxe.jpg"
+               data-alt="Ivaanyh — La Marseillaise"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/La marseillaise boxe.jpg" alt="Ivaanyh — La Marseillaise" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">La Marseillaise</span></div>
+            <span class="g-num">08</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/Photo Ici Orléans.jpg"
+               data-alt="Ivaanyh — Ici Orléans"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/Photo Ici Orléans.jpg" alt="Ivaanyh — Ici Orléans" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Ici Orléans</span></div>
+            <span class="g-num">09</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/Visuel Duo Nico.jpg"
+               data-alt="Ivaanyh — Duo"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/Visuel Duo Nico.jpg" alt="Ivaanyh — Duo" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Duo</span></div>
+            <span class="g-num">10</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/OLB-2-83.jpg"
+               data-alt="Ivaanyh — Concert"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/OLB-2-83.jpg" alt="Ivaanyh — Concert" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Concert</span></div>
+            <span class="g-num">11</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/Z66_4398.jpg"
+               data-alt="Ivaanyh — Live"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/Z66_4398.jpg" alt="Ivaanyh — Live" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Live</span></div>
+            <span class="g-num">12</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/Z66_4426.JPG"
+               data-alt="Ivaanyh — Live"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/Z66_4426.JPG" alt="Ivaanyh — Live" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Live</span></div>
+            <span class="g-num">13</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/A5CB9FB9-521C-416F-9C29-1DA1E87BD092.jpg"
+               data-alt="Ivaanyh — Portrait"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/A5CB9FB9-521C-416F-9C29-1DA1E87BD092.jpg" alt="Ivaanyh — Portrait" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Portrait</span></div>
+            <span class="g-num">14</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/IMG_3613.JPG"
+               data-alt="Ivaanyh — Scène"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/IMG_3613.JPG" alt="Ivaanyh — Scène" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Scène</span></div>
+            <span class="g-num">15</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/IMG_4890.jpg"
+               data-alt="Ivaanyh — Concert"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/IMG_4890.jpg" alt="Ivaanyh — Concert" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Concert</span></div>
+            <span class="g-num">16</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/IMG_6422.JPG"
+               data-alt="Ivaanyh"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/IMG_6422.JPG" alt="Ivaanyh" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Ivaanyh</span></div>
+            <span class="g-num">17</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/03C883F6-0638-43D2-B2E8-A86D370D02B8.JPEG"
+               data-alt="Ivaanyh — Portrait"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/03C883F6-0638-43D2-B2E8-A86D370D02B8.JPEG" alt="Ivaanyh — Portrait" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Portrait</span></div>
+            <span class="g-num">18</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/5628A6DA-9A7B-4F9F-9D54-3A4A34B20F7A.JPEG"
+               data-alt="Ivaanyh — Scène"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/5628A6DA-9A7B-4F9F-9D54-3A4A34B20F7A.JPEG" alt="Ivaanyh — Scène" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Scène</span></div>
+            <span class="g-num">19</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/Session studio.JPG"
+               data-alt="Ivaanyh — Session studio"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/Session studio.JPG" alt="Ivaanyh — Session studio" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Session studio</span></div>
+            <span class="g-num">20</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/Studio.jpg"
+               data-alt="Ivaanyh — Studio"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/Studio.jpg" alt="Ivaanyh — Studio" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Studio</span></div>
+            <span class="g-num">21</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/FE0DB6E6-CB71-4028-85F9-BE06478EC9CE.JPEG"
+               data-alt="Ivaanyh"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/FE0DB6E6-CB71-4028-85F9-BE06478EC9CE.JPEG" alt="Ivaanyh" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Ivaanyh</span></div>
+            <span class="g-num">22</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/IMG_1870.jpg"
+               data-alt="Ivaanyh"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/IMG_1870.jpg" alt="Ivaanyh" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Ivaanyh</span></div>
+            <span class="g-num">23</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/NRJ.jpg"
+               data-alt="Ivaanyh — NRJ"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/NRJ.jpg" alt="Ivaanyh — NRJ" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">NRJ</span></div>
+            <span class="g-num">24</span>
+          </div>
+
+          <div class="g-item"
+               data-src="assets/images/Photos Gallerie/IMG_9324.jpg"
+               data-alt="Ivaanyh"
+               tabindex="0" role="button" aria-label="Agrandir la photo">
+            <img class="g-img" src="assets/images/Photos Gallerie/IMG_9324.jpg" alt="Ivaanyh" loading="lazy">
+            <div class="g-overlay"><span class="g-caption">Ivaanyh</span></div>
+            <span class="g-num">25</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Presse -->
+    <section class="section section--dark" aria-labelledby="presse-title">
+      <div class="wrap" style="text-align:center;padding:4rem 2.5rem">
+        <span class="label" style="justify-content:center;margin-bottom:1.5rem">Presse</span>
+        <h2 id="presse-title" style="font-weight:300;margin-bottom:1rem">Photos haute résolution</h2>
+        <p style="color:var(--text-2);max-width:48ch;margin:0 auto 2rem;line-height:1.8">
+          Journalistes et médias : pour obtenir les photos haute définition, contactez l'équipe.
+        </p>
+        <a href="about.html#contact" class="btn btn-primary">Contacter l'équipe presse</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Ivaanyh — Accueil" style="margin-bottom:1rem;display:inline-flex">
+            <img class="nav-logo-img" src="assets/images/logo.png" alt="Ivaanyh" width="120" height="23"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="nav-logo-text" style="display:none">Ivaanyh</span>
+          </a>
+          <p class="footer-tagline">Auteure · Compositrice · Interprète</p>
+          <div class="social-row" aria-label="Réseaux sociaux">
+            <a href="https://www.instagram.com/ivaanyh" class="social-pill" rel="noopener noreferrer" target="_blank" aria-label="Instagram">IG</a>
+            <a href="https://www.youtube.com/@ivaanyh" class="social-pill" rel="noopener noreferrer" target="_blank" aria-label="YouTube">YT</a>
+            <a href="https://www.tiktok.com/@ivaanyh" class="social-pill" rel="noopener noreferrer" target="_blank" aria-label="TikTok">TT</a>
+            <a href="https://open.spotify.com/intl-fr/artist/0zK2TgnTAl6LEPwnZ3JnRM" class="social-pill" rel="noopener noreferrer" target="_blank" aria-label="Spotify">SP</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Navigation</p>
+          <ul class="footer-links" role="list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">L'artiste</a></li>
+            <li><a href="videos.html">Vidéos</a></li>
+            <li><a href="blog/">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Musique</p>
+          <ul class="footer-links" role="list">
+            <li><a href="https://open.spotify.com/intl-fr/artist/0zK2TgnTAl6LEPwnZ3JnRM" rel="noopener noreferrer" target="_blank">Spotify</a></li>
+            <li><a href="https://music.apple.com/fr/album/premi%C3%A8re-saison/1838056418" rel="noopener noreferrer" target="_blank">Apple Music</a></li>
+            <li><a href="https://www.deezer.com/fr/album/817348881" rel="noopener noreferrer" target="_blank">Deezer</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <ul class="footer-links" role="list">
+            <li><a href="about.html#contact">Booking</a></li>
+            <li><a href="about.html#contact">Presse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2025</span> Ivaanyh. Tous droits réservés. Les photos sont la propriété exclusive d'Ivaanyh.</p>
+        <p><a href="mentions-legales.html">Mentions légales</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/nav.js" defer></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

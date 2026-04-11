@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ivaanyh — Auteure, Compositrice, Interprète | Site Officiel</title>
+  <meta name="description" content="Site officiel d'Ivaanyh, auteure-compositrice-interprète indépendante. Découvrez sa musique, ses photos, ses vidéos et son actualité.">
+  <meta name="keywords" content="Ivaanyh, auteure compositrice interprète, chanteuse, musique indépendante, ACI, artiste féminine">
+  <meta name="author" content="Ivaanyh">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://ivaanyh.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ivaanyh Officiel">
+  <meta property="og:title" content="Ivaanyh — Auteure, Compositrice, Interprète">
+  <meta property="og:description" content="Site officiel d'Ivaanyh, auteure-compositrice-interprète. Musique, photos, vidéos et actualité.">
+  <meta property="og:url" content="https://ivaanyh.com/">
+  <meta property="og:image" content="https://ivaanyh.com/assets/images/ivaanyh-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ivaanyh — Photo officielle de l'artiste">
+  <meta property="og:locale" content="fr_FR">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ivaanyh">
+  <meta name="twitter:title" content="Ivaanyh — Auteure, Compositrice, Interprète">
+  <meta name="twitter:description" content="Site officiel d'Ivaanyh, auteure-compositrice-interprète.">
+  <meta name="twitter:image" content="https://ivaanyh.com/assets/images/ivaanyh-og.jpg">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <!-- Google Fonts : Cormorant Garamond + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="dns-prefetch" href="https://www.youtube.com">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ivaanyh.com/#website",
+        "name": "Ivaanyh — Site Officiel",
+        "url": "https://ivaanyh.com",
+        "description": "Site officiel d'Ivaanyh, auteure-compositrice-interprète indépendante.",
+        "inLanguage": ["fr","en"]
+      },
+      {
+        "@type": ["Person","MusicGroup"],
+        "@id": "https://ivaanyh.com/#ivaanyh",
+        "name": "Ivaanyh",
+        "description": "Ivaanyh est une auteure-compositrice-interprète indépendante. Elle écrit, compose et interprète ses propres chansons.",
+        "url": "https://ivaanyh.com",
+        "gender": "https://schema.org/Female",
+        "jobTitle": "Auteure-Compositrice-Interprète",
+        "sameAs": [
+          "https://open.spotify.com/artist/ivaanyh",
+          "https://music.apple.com/artist/ivaanyh",
+          "https://www.instagram.com/ivaanyh",
+          "https://www.youtube.com/@ivaanyh",
+          "https://www.tiktok.com/@ivaanyh"
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo en plein écran" tabindex="-1">
+  <button class="lightbox-close" id="lb-close" aria-label="Fermer">✕</button>
+  <img class="lightbox-img" id="lb-img" src="" alt="">
+</div>
+
+<!-- ========== NAVIGATION ========== -->
+<header>
+  <nav class="nav" id="nav" aria-label="Navigation principale">
+
+    <!-- Logo image — noir sur blanc, blanc sur photo (filter:invert via CSS) -->
+    <a href="/" class="nav-logo" aria-label="Ivaanyh — Accueil">
+      <img class="nav-logo-img"
+           src="assets/images/logo.png"
+           alt="Ivaanyh"
+           width="160"
+           height="31"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <span class="nav-logo-text" style="display:none">Ivaanyh</span>
+    </a>
+
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+    <ul class="nav-links" id="nav-menu" role="list">
+      <li><a href="about.html"  class="nav-link">L'artiste</a></li>
+      <li><a href="photos.html" class="nav-link">Photos</a></li>
+      <li><a href="videos.html" class="nav-link">Vidéos</a></li>
+      <li><a href="blog/"       class="nav-link">Blog</a></li>
+      <li><a href="about.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="nav-toggle"
+            aria-controls="nav-menu"
+            aria-expanded="false"
+            aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- ========== HÉRO ========== -->
+  <section class="hero" aria-labelledby="hero-name">
+
+    <div class="hero-bg" aria-hidden="true">
+      <img src="assets/images/058B8CF5-2742-44D2-A9A2-471A88445FB1.JPEG"
+           alt=""
+           fetchpriority="high"
+           role="presentation">
+    </div>
+
+    <div class="hero-body">
+      <div class="hero-title-wrap">
+        <div class="hero-eyebrow" aria-hidden="true">
+          <span class="hero-eyebrow-line"></span>
+          <span class="hero-eyebrow-text">Site Officiel</span>
+        </div>
+
+        <h1 class="hero-name" id="hero-name">
+          <img src="assets/images/logo.png"
+               alt="Ivaanyh"
+               class="hero-logo-big">
+        </h1>
+
+        <div class="hero-meta">
+          <p class="hero-role">Auteure <span>·</span> Compositrice <span>·</span> Interprète</p>
+          <a href="about.html" class="btn btn-hero">Découvrir l'artiste</a>
+        </div>
+      </div>
+
+      <div class="hero-side" aria-hidden="true">
+        <span class="hero-scroll">Scroll</span>
+      </div>
+    </div>
+
+    <!-- Barre du bas -->
+    <div class="hero-bar" aria-label="Plateformes de streaming">
+      <span class="hero-bar-label">Disponible sur</span>
+      <nav class="hero-bar-links" aria-label="Liens de streaming">
+        <a href="https://open.spotify.com/artist/ivaanyh" rel="noopener noreferrer" target="_blank">Spotify</a>
+        <a href="https://music.apple.com/artist/ivaanyh" rel="noopener noreferrer" target="_blank">Apple Music</a>
+        <a href="https://www.youtube.com/@ivaanyh" rel="noopener noreferrer" target="_blank">YouTube</a>
+        <a href="https://www.deezer.com/artist/ivaanyh" rel="noopener noreferrer" target="_blank">Deezer</a>
+        <a href="https://tidal.com/artist/ivaanyh" rel="noopener noreferrer" target="_blank">Tidal</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track" id="marquee-track">
+      <!-- Dupliqué en JS pour l'effet infini -->
+      <span class="marquee-item">Auteure</span>
+      <span class="marquee-item">Compositrice</span>
+      <span class="marquee-item">Interprète</span>
+      <span class="marquee-item">Artiste Indépendante</span>
+      <span class="marquee-item">Chanson Française</span>
+      <span class="marquee-item">Pop Alternative</span>
+      <span class="marquee-item">Ivaanyh</span>
+      <span class="marquee-item">Auteure</span>
+      <span class="marquee-item">Compositrice</span>
+      <span class="marquee-item">Interprète</span>
+      <span class="marquee-item">Artiste Indépendante</span>
+      <span class="marquee-item">Chanson Française</span>
+      <span class="marquee-item">Pop Alternative</span>
+      <span class="marquee-item">Ivaanyh</span>
+    </div>
+  </div>
+
+  <!-- ========== L'ARTISTE ========== -->
+  <section class="section" id="artiste" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head-left">
+          <span class="label">L'artiste</span>
+          <h2 id="about-h" style="font-size:clamp(2.4rem,4.5vw,4rem)">Une voix singulière,<br><em>un univers à part…</em></h2>
+        </div>
+        <div class="section-head-right">
+          <span class="section-num">01</span>
+          <a href="about.html" class="btn btn-ghost">Biographie complète</a>
+        </div>
+      </div>
+
+      <div class="about-split">
+        <!-- Image -->
+        <div class="about-img-wrap">
+          <img src="assets/images/photo guitare site retouché.JPEG"
+               alt="Ivaanyh en concert avec sa guitare"
+               class="about-img"
+               loading="lazy">
+
+          <div class="about-plate" aria-hidden="true" style="border:none;background:transparent;padding:.8rem 0 0">
+            <div class="about-plate-label">Artiste indépendante</div>
+          </div>
+        </div>
+
+        <!-- Texte -->
+        <div class="about-text">
+          <h2>Ivaanyh est une artiste qui écrit,<br>compose et interprète.</h2>
+
+          <p>
+            Auteure-compositrice-interprète indépendante, Ivaanyh construit un univers
+            musical où chaque chanson est un acte de création totale. Elle écrit les mots,
+            compose la musique, et porte l'ensemble sur scène avec une présence sans filtre.
+          </p>
+          <p>
+            Son répertoire se construit à la croisée de la chanson française, de la pop
+            alternative et du folk — des territoires sonores qu'elle explore avec la liberté
+            que seule l'indépendance artistique permet.
+          </p>
+
+          <dl class="about-facts">
+            <div class="fact">
+              <dt>Rôle</dt>
+              <dd>Auteure · Compositrice · Interprète</dd>
+            </div>
+            <div class="fact">
+              <dt>Genre</dt>
+              <dd>Pop alternative · Chanson</dd>
+            </div>
+            <div class="fact">
+              <dt>Langue</dt>
+              <dd>Français</dd>
+            </div>
+            <div class="fact">
+              <dt>Statut</dt>
+              <dd>Artiste indépendante</dd>
+            </div>
+          </dl>
+
+          <div>
+            <a href="https://open.spotify.com/intl-fr/artist/0zK2TgnTAl6LEPwnZ3JnRM" class="btn btn-primary" rel="noopener noreferrer" target="_blank">Écouter la musique</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SORTIES / RELEASES ========== -->
+  <section class="section section--dark" id="musique" aria-labelledby="releases-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head-left">
+          <span class="label">Discographie</span>
+          <h2 id="releases-h">Titres & projets</h2>
+        </div>
+        <div class="section-head-right">
+          <span class="section-num">02</span>
+          <a href="about.html#ecouter" class="btn btn-ghost">Toute la discographie</a>
+        </div>
+      </div>
+
+      <ol class="releases-list" aria-label="Discographie d'Ivaanyh">
+
+        <li>
+          <a href="https://open.spotify.com/artist/ivaanyh"
+             class="release-item"
+             rel="noopener noreferrer"
+             target="_blank"
+             aria-label="Écouter le titre 01 sur Spotify">
+            <span class="release-num mono">01</span>
+            <div class="release-info">
+              <span class="release-title">Titre du premier single</span>
+              <span class="release-type">Single</span>
+            </div>
+            <span class="release-year mono">2024</span>
+            <span class="release-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://open.spotify.com/artist/ivaanyh"
+             class="release-item"
+             rel="noopener noreferrer"
+             target="_blank"
+             aria-label="Écouter le titre 02 sur Spotify">
+            <span class="release-num mono">02</span>
+            <div class="release-info">
+              <span class="release-title">Deuxième single</span>
+              <span class="release-type">Single</span>
+            </div>
+            <span class="release-year mono">2024</span>
+            <span class="release-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://open.spotify.com/artist/ivaanyh"
+             class="release-item"
+             rel="noopener noreferrer"
+             target="_blank"
+             aria-label="Écouter le projet sur Spotify">
+            <span class="release-num mono">03</span>
+            <div class="release-info">
+              <span class="release-title">Titre du projet</span>
+              <span class="release-type">EP</span>
+            </div>
+            <span class="release-year mono">2023</span>
+            <span class="release-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://open.spotify.com/artist/ivaanyh"
+             class="release-item"
+             rel="noopener noreferrer"
+             target="_blank"
+             aria-label="Écouter le titre 04 sur Spotify">
+            <span class="release-num mono">04</span>
+            <div class="release-info">
+              <span class="release-title">Titre original</span>
+              <span class="release-type">Single</span>
+            </div>
+            <span class="release-year mono">2023</span>
+            <span class="release-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========== PHOTOS ========== -->
+  <section class="section" id="photos" aria-labelledby="photos-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head-left">
+          <span class="label">Galerie</span>
+          <h2 id="photos-h">L'univers visuel<br>d'<em>Ivaanyh</em></h2>
+        </div>
+        <div class="section-head-right">
+          <span class="section-num">03</span>
+          <a href="photos.html" class="btn btn-ghost">Toutes les photos</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pochettes singles -->
+    <div role="list" aria-label="Pochettes des singles d'Ivaanyh"
+         style="display:flex;flex-wrap:wrap;gap:.75rem;padding:0 2rem 2rem;">
+
+      <article role="listitem" tabindex="0" style="width:130px;flex-shrink:0;position:relative;overflow:hidden;border-radius:4px;" aria-label="Pochette :Première Saison">
+        <img style="width:130px;height:130px;object-fit:cover;display:block;" src="assets/images/Pochettes/Pochette Première Saison.JPG" alt="Ivaanyh — Première Saison" loading="lazy">
+        <div class="g-overlay"><p class="g-caption">Première Saison</p></div>
+      </article>
+
+      <article role="listitem" tabindex="0" style="width:130px;flex-shrink:0;position:relative;overflow:hidden;border-radius:4px;" aria-label="Pochette :Ma belle">
+        <img style="width:130px;height:130px;object-fit:cover;display:block;" src="assets/images/Pochettes/Pochette Ma belle.JPEG" alt="Ivaanyh — Ma belle" loading="lazy">
+        <div class="g-overlay"><p class="g-caption">Ma belle</p></div>
+      </article>
+
+      <article role="listitem" tabindex="0" style="width:130px;flex-shrink:0;position:relative;overflow:hidden;border-radius:4px;" aria-label="Pochette :Contre Moi-Même">
+        <img style="width:130px;height:130px;object-fit:cover;display:block;" src="assets/images/Pochettes/Cover Contre Moi-Même.JPEG" alt="Ivaanyh — Contre Moi-Même" loading="lazy">
+        <div class="g-overlay"><p class="g-caption">Contre Moi-Même</p></div>
+      </article>
+
+      <article role="listitem" tabindex="0" style="width:130px;flex-shrink:0;position:relative;overflow:hidden;border-radius:4px;" aria-label="Pochette :PARLER">
+        <img style="width:130px;height:130px;object-fit:cover;display:block;" src="assets/images/Pochettes/Pochette PARLER.JPEG" alt="Ivaanyh — PARLER" loading="lazy">
+        <div class="g-overlay"><p class="g-caption">PARLER</p></div>
+      </article>
+
+      <article role="listitem" tabindex="0" style="width:130px;flex-shrink:0;position:relative;overflow:hidden;border-radius:4px;" aria-label="Pochette :Y'a quelque chose à faire">
+        <img style="width:130px;height:130px;object-fit:cover;display:block;" src="assets/images/Pochettes/Pochette yqcaf.JPEG" alt="Ivaanyh — Y'a qu'ça à faire" loading="lazy">
+        <div class="g-overlay"><p class="g-caption">Y'a qu'ça à faire</p></div>
+      </article>
+
+      <article role="listitem" tabindex="0" style="width:130px;flex-shrink:0;position:relative;overflow:hidden;border-radius:4px;" aria-label="Pochette :Bomba">
+        <img style="width:130px;height:130px;object-fit:cover;display:block;" src="assets/images/Pochettes/Pochette Bomba.JPEG" alt="Ivaanyh — Bomba" loading="lazy">
+        <div class="g-overlay"><p class="g-caption">Bomba</p></div>
+      </article>
+
+      <article role="listitem" tabindex="0" style="width:130px;flex-shrink:0;position:relative;overflow:hidden;border-radius:4px;" aria-label="Pochette :Mango">
+        <img style="width:130px;height:130px;object-fit:cover;display:block;" src="assets/images/Pochettes/POCHETTE MANGO.JPEG" alt="Ivaanyh — Mango" loading="lazy">
+        <div class="g-overlay"><p class="g-caption">Mango</p></div>
+      </article>
+
+      <article role="listitem" tabindex="0" style="width:130px;flex-shrink:0;position:relative;overflow:hidden;border-radius:4px;" aria-label="Pochette :Album">
+        <img style="width:130px;height:130px;object-fit:cover;display:block;" src="assets/images/Pochettes/Pochette album.JPEG" alt="Ivaanyh — Album" loading="lazy">
+        <div class="g-overlay"><p class="g-caption">Album</p></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ========== VIDÉOS ========== -->
+  <section class="section section--dark" id="videos" aria-labelledby="videos-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head-left">
+          <span class="label">Audiovisuel</span>
+          <h2 id="videos-h">Clips & sessions</h2>
+        </div>
+        <div class="section-head-right">
+          <span class="section-num">04</span>
+          <a href="videos.html" class="btn btn-ghost">Toutes les vidéos</a>
+        </div>
+      </div>
+
+      <div class="video-grid">
+
+        <article class="video-card" itemscope itemtype="https://schema.org/VideoObject">
+          <a class="video-thumb" href="https://www.youtube.com/watch?v=KesSunPc1LM"
+             rel="noopener noreferrer" target="_blank" aria-label="Regarder Ānanda sur YouTube">
+            <img class="video-thumb-img"
+                 src="https://img.youtube.com/vi/KesSunPc1LM/hqdefault.jpg"
+                 alt="Ivaanyh — Ānanda (Clip officiel)" loading="lazy">
+            <span class="play-btn" aria-hidden="true"><span class="play-btn-inner"></span></span>
+          </a>
+          <div class="video-body">
+            <p class="video-type">Clip officiel</p>
+            <h3 class="video-title" itemprop="name">Ānanda</h3>
+          </div>
+        </article>
+
+        <article class="video-card" itemscope itemtype="https://schema.org/VideoObject">
+          <a class="video-thumb" href="https://www.youtube.com/watch?v=wxuee6PRIEk"
+             rel="noopener noreferrer" target="_blank" aria-label="Regarder la session ICI Orléans sur YouTube">
+            <img class="video-thumb-img"
+                 src="https://img.youtube.com/vi/wxuee6PRIEk/hqdefault.jpg"
+                 alt="Ivaanyh — Session acoustique ICI Orléans" loading="lazy">
+            <span class="play-btn" aria-hidden="true"><span class="play-btn-inner"></span></span>
+          </a>
+          <div class="video-body">
+            <p class="video-type">Session acoustique</p>
+            <h3 class="video-title" itemprop="name">Session acoustique — ICI Orléans</h3>
+          </div>
+        </article>
+
+        <article class="video-card" itemscope itemtype="https://schema.org/VideoObject">
+          <a class="video-thumb" href="https://youtu.be/RrC9tX2Y6nY"
+             rel="noopener noreferrer" target="_blank" aria-label="Regarder le live sur YouTube">
+            <img class="video-thumb-img"
+                 src="https://img.youtube.com/vi/RrC9tX2Y6nY/hqdefault.jpg"
+                 alt="Ivaanyh — Live" loading="lazy">
+            <span class="play-btn" aria-hidden="true"><span class="play-btn-inner"></span></span>
+          </a>
+          <div class="video-body">
+            <p class="video-type">Live</p>
+            <h3 class="video-title" itemprop="name">Live</h3>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BLOG ========== -->
+  <section class="section" id="blog" aria-labelledby="blog-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head-left">
+          <span class="label">Journal</span>
+          <h2 id="blog-h">Actualité & textes</h2>
+        </div>
+        <div class="section-head-right">
+          <span class="section-num">05</span>
+          <a href="blog/" class="btn btn-ghost">Tous les articles</a>
+        </div>
+      </div>
+
+      <!-- Liste style éditorial -->
+      <nav class="blog-list" aria-label="Derniers articles du blog d'Ivaanyh">
+
+        <a href="blog/posts/qui-est-ivaanyh.html" class="blog-item"
+           aria-label="Lire : Qui est Ivaanyh ?">
+          <time class="blog-item-date" datetime="2024-03-01">01.03.2024</time>
+          <div class="blog-item-body">
+            <span class="blog-item-tag">Portrait</span>
+            <h3 class="blog-item-title">Qui est Ivaanyh ? Le parcours d'une artiste indépendante</h3>
+            <p class="blog-item-excerpt">
+              Ivaanyh est une auteure-compositrice-interprète dont la singularité tient autant à
+              la profondeur de ses textes qu'à la richesse de ses mélodies.
+            </p>
+          </div>
+          <span class="blog-item-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="blog/posts/influences-musicales.html" class="blog-item"
+           aria-label="Lire : Influences musicales d'Ivaanyh">
+          <time class="blog-item-date" datetime="2024-04-15">15.04.2024</time>
+          <div class="blog-item-body">
+            <span class="blog-item-tag">Musique</span>
+            <h3 class="blog-item-title">Les influences musicales qui façonnent l'univers d'Ivaanyh</h3>
+            <p class="blog-item-excerpt">
+              De la chanson française aux sonorités folk et indie, les références d'Ivaanyh
+              forment un paysage sonore riche et cohérent.
+            </p>
+          </div>
+          <span class="blog-item-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="blog/posts/processus-creation.html" class="blog-item"
+           aria-label="Lire : Comment Ivaanyh écrit ses chansons">
+          <time class="blog-item-date" datetime="2024-06-01">01.06.2024</time>
+          <div class="blog-item-body">
+            <span class="blog-item-tag">Création</span>
+            <h3 class="blog-item-title">Comment Ivaanyh écrit ses chansons : de l'idée à la chanson</h3>
+            <p class="blog-item-excerpt">
+              Le processus créatif d'Ivaanyh, de l'étincelle initiale jusqu'à l'enregistrement final.
+            </p>
+          </div>
+          <span class="blog-item-arrow" aria-hidden="true">→</span>
+        </a>
+
+      </nav>
+    </div>
+  </section>
+
+  <!-- ========== RÉSEAUX SOCIAUX ========== -->
+  <section class="section" aria-labelledby="social-title">
+    <div class="wrap" style="text-align:center">
+      <span class="label" style="justify-content:center;margin-bottom:1.5rem">Communauté</span>
+      <h2 id="social-title" style="font-weight:300;margin-bottom:.8rem">Suivez Ivaanyh</h2>
+      <p style="color:var(--text-2);margin-bottom:3rem;font-size:var(--small)">Restez connectés pour ne rien manquer</p>
+      <div class="social-links-big" role="list" aria-label="Réseaux sociaux d'Ivaanyh">
+
+        <a href="https://www.instagram.com/ivaanyh" class="social-link-big" rel="noopener noreferrer" target="_blank" aria-label="Ivaanyh sur Instagram">
+          <span class="social-link-big-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <span class="social-link-big-name">Instagram</span>
+          <span class="social-link-big-handle">@ivaanyh</span>
+        </a>
+
+        <a href="https://www.facebook.com/ivaanyh" class="social-link-big" rel="noopener noreferrer" target="_blank" aria-label="Ivaanyh sur Facebook">
+          <span class="social-link-big-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </span>
+          <span class="social-link-big-name">Facebook</span>
+          <span class="social-link-big-handle">ivaanyh</span>
+        </a>
+
+        <a href="https://www.youtube.com/@ivaanyh" class="social-link-big" rel="noopener noreferrer" target="_blank" aria-label="Ivaanyh sur YouTube">
+          <span class="social-link-big-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </span>
+          <span class="social-link-big-name">YouTube</span>
+          <span class="social-link-big-handle">@ivaanyh</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@ivaanyh" class="social-link-big" rel="noopener noreferrer" target="_blank" aria-label="Ivaanyh sur TikTok">
+          <span class="social-link-big-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+          </span>
+          <span class="social-link-big-name">TikTok</span>
+          <span class="social-link-big-handle">@ivaanyh</span>
+        </a>
+
+        <a href="https://fr.linkedin.com/in/ivaanyh-chanteuse-aci" class="social-link-big" rel="noopener noreferrer" target="_blank" aria-label="Ivaanyh sur LinkedIn">
+          <span class="social-link-big-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </span>
+          <span class="social-link-big-name">LinkedIn</span>
+          <span class="social-link-big-handle">ivaanyh-chanteuse-aci</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA FINAL ========== -->
+  <section class="section section--dark" aria-label="Prendre contact">
+    <div class="wrap" style="text-align:center; padding: 4rem 2.5rem;">
+      <span class="label" style="justify-content:center; margin-bottom:1.5rem">Contact</span>
+      <h2 style="font-size:var(--h1); max-width:18ch; margin:0 auto 2rem; font-weight:300;">
+        Un projet ? Une idée ?<br><em>Parlons-en.</em>
+      </h2>
+      <a href="about.html#contact" class="btn btn-primary">Écrire à Ivaanyh</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer" role="contentinfo">
+  <div class="wrap">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" aria-label="Ivaanyh — Accueil">Ivaanyh</a>
+        <p class="footer-tagline">Auteure · Compositrice · Interprète<br>Artiste indépendante</p>
+        <nav aria-label="Réseaux sociaux">
+          <div class="social-row">
+            <a href="https://www.instagram.com/ivaanyh" class="social-pill" rel="noopener noreferrer" target="_blank" aria-label="Instagram">IG</a>
+            <a href="https://www.facebook.com/ivaanyh" class="social-pill" rel="noopener noreferrer" target="_blank" aria-label="Facebook">FB</a>
+            <a href="https://www.youtube.com/@ivaanyh" class="social-pill" rel="noopener noreferrer" target="_blank" aria-label="YouTube">YT</a>
+            <a href="https://www.tiktok.com/@ivaanyh" class="social-pill" rel="noopener noreferrer" target="_blank" aria-label="TikTok">TT</a>
+            <a href="https://fr.linkedin.com/in/ivaanyh-chanteuse-aci" class="social-pill" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn">LI</a>
+            <a href="https://open.spotify.com/intl-fr/artist/0zK2TgnTAl6LEPwnZ3JnRM" class="social-pill" rel="noopener noreferrer" target="_blank" aria-label="Spotify">SP</a>
+          </div>
+        </nav>
+      </div>
+
+      <nav aria-label="Navigation du site">
+        <p class="footer-col-title">Navigation</p>
+        <ul class="footer-links" role="list">
+          <li><a href="about.html">L'artiste</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="videos.html">Vidéos</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Plateformes de streaming">
+        <p class="footer-col-title">Écouter</p>
+        <ul class="footer-links" role="list">
+          <li><a href="https://open.spotify.com/artist/ivaanyh" rel="noopener noreferrer" target="_blank">Spotify</a></li>
+          <li><a href="https://music.apple.com/artist/ivaanyh" rel="noopener noreferrer" target="_blank">Apple Music</a></li>
+          <li><a href="https://www.youtube.com/@ivaanyh" rel="noopener noreferrer" target="_blank">YouTube</a></li>
+          <li><a href="https://www.deezer.com/artist/ivaanyh" rel="noopener noreferrer" target="_blank">Deezer</a></li>
+          <li><a href="https://tidal.com/artist/ivaanyh" rel="noopener noreferrer" target="_blank">Tidal</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links" role="list">
+          <li><a href="about.html#contact">Booking</a></li>
+          <li><a href="about.html#contact">Presse</a></li>
+          <li><a href="about.html#contact">Collaboration</a></li>
+          <li><a href="about.html#contact">Synchronisation</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="yr"></span> Ivaanyh. Tous droits réservés.</p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a>
+        &nbsp;·&nbsp;
+        <a href="confidentialite.html">Confidentialité</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js" defer></script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

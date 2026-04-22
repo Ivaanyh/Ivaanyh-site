@@ -81,6 +81,16 @@
   .nav-links.open { right: 0; }
   .nav-link { font-size: .875rem; }
   .nav-toggle { display: flex; }
+
+  /* Liens du menu mobile toujours en sombre (fond clair) */
+  .nav-links .nav-link,
+  .nav:not(.scrolled) .nav-links .nav-link {
+    color: var(--text) !important;
+  }
+  .nav-links .nav-link:hover,
+  .nav:not(.scrolled) .nav-links .nav-link:hover {
+    color: var(--accent) !important;
+  }
   .nav-overlay {
     display: block;
     position: fixed;

@@ -179,8 +179,8 @@
     /* fondu bas → blanc pour enchaîner avec la page */
     linear-gradient(to top,
       rgba(255,255,255,1)   0%,
-      rgba(255,255,255,.7)  16%,
-      rgba(255,255,255,.0)  42%,
+      rgba(255,255,255,.3)  16%,
+      rgba(255,255,255,.0)  35%,
       transparent           100%),
     /* vignette gauche pour lisibilité du texte */
     linear-gradient(to right,

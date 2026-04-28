@@ -226,7 +226,7 @@
 .hero-brand {
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 1.4rem;
 }
 .hero-name {
@@ -251,15 +251,10 @@
   margin-bottom: 0;
   line-height: 1.35;
 }
-.hero-bottom {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-.hero-bottom .hero-sub {
-  flex: 1;
+.hero-cta-wrap {
+  margin-top: 1.6rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
 }
 .hero-sub {
   font-size: clamp(.75rem, 1.2vw, .9rem);
@@ -269,6 +264,7 @@
   text-shadow: 0 1px 8px rgba(0,0,0,.4);
   margin-bottom: 0;
   line-height: 1.8;
+  margin-top: 0;
 }
 
 .hero-meta {
@@ -279,12 +275,13 @@
 }
 .hero-role {
   font-size: var(--xs);
-  letter-spacing: .18em;
+  letter-spacing: .15em;
   text-transform: uppercase;
   color: rgba(255,255,255,.65);
   margin-bottom: 0;
   display: flex;
-  gap: clamp(.8rem, 2vw, 1.8rem);
+  justify-content: center;
+  gap: clamp(1.2rem, 2.8vw, 2.5rem);
 }
 .hero-role span { color: rgba(255,255,255,.65); }
 

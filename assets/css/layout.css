@@ -226,7 +226,7 @@
 .hero-brand {
   display: inline-flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: flex-start;
   margin-bottom: 1.4rem;
 }
 .hero-name {
@@ -255,8 +255,11 @@
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
   flex-wrap: wrap;
+}
+.hero-bottom .hero-sub {
+  flex: 1;
 }
 .hero-sub {
   font-size: clamp(.75rem, 1.2vw, .9rem);
@@ -276,13 +279,12 @@
 }
 .hero-role {
   font-size: var(--xs);
-  letter-spacing: .05em;
+  letter-spacing: .18em;
   text-transform: uppercase;
   color: rgba(255,255,255,.65);
   margin-bottom: 0;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  gap: clamp(.8rem, 2vw, 1.8rem);
 }
 .hero-role span { color: rgba(255,255,255,.65); }
 

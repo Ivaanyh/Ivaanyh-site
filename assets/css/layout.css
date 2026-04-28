@@ -224,26 +224,27 @@
 
 /* Dans le héro : logo image à la place du texte */
 .hero-name {
-  margin-bottom: 2rem;
+  margin-bottom: .6rem;
   line-height: 1;
 }
 .hero-logo-big {
-  filter: invert(1) brightness(1.1);   /* logo noir → blanc */
-  height: clamp(4rem, 11vw, 9rem);     /* légèrement agrandi */
+  filter: invert(1) brightness(1.1);
+  height: clamp(3rem, 8vw, 6.5rem);
   width: auto;
-  max-width: 80vw;
+  max-width: 70vw;
   display: block;
 }
 
 .hero-tagline {
   font-family: var(--serif);
-  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
   font-weight: 300;
   font-style: italic;
   color: #fff;
-  text-shadow: 0 1px 12px rgba(0,0,0,.45);
-  margin-bottom: .8rem;
-  line-height: 1.4;
+  text-shadow: 0 1px 16px rgba(0,0,0,.5);
+  margin-bottom: .9rem;
+  margin-top: 1.2rem;
+  line-height: 1.35;
 }
 .hero-sub {
   font-size: clamp(.75rem, 1.2vw, .9rem);
@@ -266,6 +267,7 @@
   letter-spacing: .2em;
   text-transform: uppercase;
   color: rgba(255,255,255,.65);
+  margin-bottom: 0;
 }
 .hero-role span { color: rgba(255,255,255,.4); margin: 0 .5rem; }
 

@@ -193,7 +193,7 @@
 .hero-body {
   position: relative;
   z-index: 1;
-  padding: 0 2.5rem 4.5rem;
+  padding: 0 2.5rem 2rem;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: flex-end;
@@ -223,28 +223,40 @@
 }
 
 /* Dans le héro : logo image à la place du texte */
+.hero-brand {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 1.4rem;
+}
 .hero-name {
-  margin-bottom: .6rem;
+  margin-bottom: .5rem;
   line-height: 1;
 }
 .hero-logo-big {
   filter: invert(1) brightness(1.1);
-  height: clamp(3rem, 8vw, 6.5rem);
+  height: clamp(3.5rem, 9vw, 7.5rem);
   width: auto;
-  max-width: 70vw;
+  max-width: 75vw;
   display: block;
 }
 
 .hero-tagline {
   font-family: var(--serif);
-  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
   font-weight: 300;
   font-style: italic;
   color: #fff;
   text-shadow: 0 1px 16px rgba(0,0,0,.5);
-  margin-bottom: .9rem;
-  margin-top: 1.2rem;
+  margin-bottom: 0;
   line-height: 1.35;
+}
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+  flex-wrap: wrap;
 }
 .hero-sub {
   font-size: clamp(.75rem, 1.2vw, .9rem);
@@ -252,7 +264,7 @@
   text-transform: uppercase;
   color: rgba(255,255,255,.7);
   text-shadow: 0 1px 8px rgba(0,0,0,.4);
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   line-height: 1.8;
 }
 
@@ -264,12 +276,15 @@
 }
 .hero-role {
   font-size: var(--xs);
-  letter-spacing: .2em;
+  letter-spacing: .05em;
   text-transform: uppercase;
   color: rgba(255,255,255,.65);
   margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-.hero-role span { color: rgba(255,255,255,.4); margin: 0 .5rem; }
+.hero-role span { color: rgba(255,255,255,.65); }
 
 /* Colonne droite héro */
 .hero-side {

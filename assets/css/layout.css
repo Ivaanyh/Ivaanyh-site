@@ -227,7 +227,6 @@
   display: inline-flex;
   flex-direction: column;
   align-items: stretch;
-  max-width: 75vw;
   margin-bottom: 1.4rem;
 }
 .hero-name {
@@ -280,13 +279,14 @@
   flex-wrap: wrap;
 }
 .hero-role {
+  display: block;
+  text-align: center;
   font-size: var(--xs);
-  letter-spacing: .12em;
+  letter-spacing: .18em;
+  word-spacing: 2.5em;
   text-transform: uppercase;
   color: rgba(255,255,255,.65);
   margin-bottom: 0;
-  display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 .hero-role span { color: rgba(255,255,255,.65); }

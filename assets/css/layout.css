@@ -193,7 +193,7 @@
 .hero-body {
   position: relative;
   z-index: 1;
-  padding: 0 2.5rem 2.5rem;
+  padding: 0 2.5rem 1rem;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: flex-end;

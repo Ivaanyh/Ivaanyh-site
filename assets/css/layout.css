@@ -279,17 +279,15 @@
   flex-wrap: wrap;
 }
 .hero-role {
-  display: block;
-  text-align: center;
   font-size: var(--xs);
-  letter-spacing: .18em;
-  word-spacing: 2.5em;
+  letter-spacing: .2em;
   text-transform: uppercase;
   color: rgba(255,255,255,.65);
   margin-bottom: 0;
+  text-align: center;
   width: 100%;
 }
-.hero-role span { color: rgba(255,255,255,.65); }
+.hero-role span { color: rgba(255,255,255,.4); margin: 0 .4rem; }
 
 /* Colonne droite héro */
 .hero-side {

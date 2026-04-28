@@ -235,6 +235,26 @@
   display: block;
 }
 
+.hero-tagline {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+  font-weight: 300;
+  font-style: italic;
+  color: #fff;
+  text-shadow: 0 1px 12px rgba(0,0,0,.45);
+  margin-bottom: .8rem;
+  line-height: 1.4;
+}
+.hero-sub {
+  font-size: clamp(.75rem, 1.2vw, .9rem);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.7);
+  text-shadow: 0 1px 8px rgba(0,0,0,.4);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
 .hero-meta {
   display: flex;
   align-items: center;

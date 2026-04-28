@@ -224,7 +224,9 @@
 
 /* Dans le héro : logo image à la place du texte */
 .hero-brand {
-  display: block;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
   margin-bottom: 1.4rem;
 }
 .hero-name {
@@ -257,7 +259,7 @@
   flex-wrap: wrap;
 }
 .hero-bottom .btn-hero {
-  margin-left: clamp(4rem, 16vw, 20rem);
+  margin-left: clamp(5rem, 20vw, 26rem);
 }
 .hero-sub {
   font-size: clamp(.75rem, 1.2vw, .9rem);

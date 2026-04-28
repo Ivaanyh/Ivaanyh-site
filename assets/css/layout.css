@@ -224,9 +224,7 @@
 
 /* Dans le héro : logo image à la place du texte */
 .hero-brand {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
   margin-bottom: 1.4rem;
 }
 .hero-name {
@@ -251,10 +249,12 @@
   margin-bottom: 0;
   line-height: 1.35;
 }
-.hero-cta-wrap {
-  margin-top: 1.6rem;
-  margin-bottom: 1.8rem;
-  text-align: center;
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1.8rem;
+  flex-wrap: wrap;
 }
 .hero-sub {
   font-size: clamp(.75rem, 1.2vw, .9rem);
@@ -281,7 +281,8 @@
   margin-bottom: 0;
   display: flex;
   justify-content: center;
-  gap: clamp(1.2rem, 2.8vw, 2.5rem);
+  gap: clamp(2rem, 4.5vw, 5rem);
+  width: 100%;
 }
 .hero-role span { color: rgba(255,255,255,.65); }
 

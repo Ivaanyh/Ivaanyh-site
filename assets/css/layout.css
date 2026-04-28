@@ -193,7 +193,7 @@
 .hero-body {
   position: relative;
   z-index: 1;
-  padding: 0 2.5rem 4.5rem;
+  padding: 0 2.5rem 2.5rem;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: flex-end;
@@ -279,14 +279,14 @@
   flex-wrap: wrap;
 }
 .hero-role {
+  display: block;
+  text-align: center;
   font-size: var(--xs);
-  letter-spacing: .15em;
+  letter-spacing: .18em;
+  word-spacing: 2.5em;
   text-transform: uppercase;
   color: rgba(255,255,255,.65);
   margin-bottom: 0;
-  display: flex;
-  justify-content: center;
-  gap: clamp(3.5rem, 7vw, 9rem);
   width: 100%;
 }
 .hero-role span { color: rgba(255,255,255,.65); }

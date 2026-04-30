@@ -251,7 +251,8 @@
 }
 .hero-bottom {
   margin-top: 2.2rem;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 .hero-sub {
   font-size: clamp(.75rem, 1.2vw, .9rem);
@@ -272,7 +273,8 @@
 }
 .hero-role {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: clamp(1.5rem, 3.5vw, 4rem);
   width: 100%;
   font-size: var(--xs);
   letter-spacing: .14em;

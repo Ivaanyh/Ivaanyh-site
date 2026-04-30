@@ -224,20 +224,18 @@
 
 /* Dans le héro : logo image à la place du texte */
 .hero-brand {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: stretch;
-  margin-bottom: 1.4rem;
+  display: block;
+  width: clamp(14rem, 40vw, 32rem);
+  margin-bottom: 1.6rem;
 }
 .hero-name {
-  margin-bottom: .5rem;
+  margin-bottom: .6rem;
   line-height: 1;
 }
 .hero-logo-big {
   filter: invert(1) brightness(1.1);
-  height: clamp(3.5rem, 9vw, 7.5rem);
-  width: auto;
-  max-width: 75vw;
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -252,9 +250,8 @@
   line-height: 1.35;
 }
 .hero-bottom {
-  margin-top: 1.8rem;
-  display: flex;
-  justify-content: center;
+  margin-top: 2.2rem;
+  display: block;
 }
 .hero-sub {
   font-size: clamp(.75rem, 1.2vw, .9rem);
@@ -275,14 +272,13 @@
 }
 .hero-role {
   display: flex;
-  justify-content: center;
-  gap: clamp(2.5rem, 5vw, 6rem);
+  justify-content: space-between;
+  width: 100%;
   font-size: var(--xs);
-  letter-spacing: .18em;
+  letter-spacing: .14em;
   text-transform: uppercase;
   color: rgba(255,255,255,.65);
   margin-bottom: 0;
-  width: 100%;
 }
 .hero-role span { color: rgba(255,255,255,.65); }
 
